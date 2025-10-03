@@ -203,5 +203,3 @@ Custom Project Shortcuts
 Personal configuration meant to be customized. Adapt freely within your environment.
 
 
-# AI-Terminal
-# AI-Terminal
