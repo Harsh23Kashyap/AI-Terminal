@@ -17,7 +17,7 @@ alias 3='cd -3'
 # -----------------------------------------------------------------------------
 # Environment Setup
 # -----------------------------------------------------------------------------
-export PATH=/Users/harshkashyap/package/perl-5.38.2/:$PATH:.
+export PATH=/Users/{username}/package/perl-5.38.2/:$PATH:.
 export LC_CTYPE="en_US.UTF-8"
 export PATH=$HOME/.gem/bin:$PATH
 export PATH="$PATH":"$HOME/.pub-cache/bin"
@@ -226,8 +226,8 @@ alias ~='cd ~'
 alias -- -='cd -'
 
 # Custom workspace
-alias workspace='cd /Users/harshkashyap/workspace'
-alias ws='cd /Users/harshkashyap/workspace'
+alias workspace='cd /Users/{username}/workspace'
+alias ws='cd /Users/{username}/workspace'
 
 # Quick directory jumps with colors
 alias desktop='cd ~/Desktop && ls -G'
@@ -797,7 +797,7 @@ searchhistory() {
             # Search by path using awk
             if [[ -z "$2" ]]; then
                 echo "❌ Usage: searchhistory -path <path>"
-                echo "📝 Example: searchhistory -path /Users/harshkashyap/workspace"
+                echo "📝 Example: searchhistory -path /Users/{username}/workspace"
                 echo "📝 Example: searchhistory -path workspace (partial match)"
                 return 1
             fi
@@ -1021,7 +1021,7 @@ help() {
 
 # Main help menu
 help_main_menu() {
-    echo "🚀 ${fg[cyan]}HARSH'S ZSH COMMAND HELP SYSTEM${reset_color}"
+    echo "🚀 ${fg[cyan]}{username}'S ZSH COMMAND HELP SYSTEM${reset_color}"
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     echo ""
     echo "${fg[yellow]}📚 CATEGORIES:${reset_color}"
@@ -2338,15 +2338,11 @@ help_ai() {
 # -----------------------------------------------------------------------------
 
 # --- Env Activation ---
-alias activate='source "/Users/harshkashyap/Projects/Dennis Labs/Custom Nerd/customnerd/customnerd-backend/venv/bin/activate"'
+alias activate='source "/Users/{username}/Projects/Dennis Labs/Custom Nerd/customnerd/customnerd-backend/venv/bin/activate"'
 
 # --- Project Shortcuts ---
-alias dl='cd "/Users/harshkashyap/Projects/Dennis Labs"'
-alias proj='cd "/Users/harshkashyap/Projects"'
-
-# --- Remote Connections ---
-alias connectdietnerd='cd "/Users/harshkashyap/Projects/Dennis Labs" && ssh -i "dietnerdv2.pem" ubuntu@ec2-54-67-78-176.us-west-1.compute.amazonaws.com'
-alias connectdietnerdstaging='cd "/Users/harshkashyap/Projects/Dennis Labs" && ssh -i "dietnerd_staging.pem" ubuntu@ec2-18-144-35-229.us-west-1.compute.amazonaws.com'
+alias dl='cd "/Users/{username}/Projects/Labs"'
+alias proj='cd "/Users/{username}/Projects"'
 
 ## Terminal Activate
 activate
